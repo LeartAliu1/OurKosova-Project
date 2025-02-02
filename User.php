@@ -8,7 +8,7 @@ class User {
         $this->db = (new Database())->getConnection();
     }
 
-    // Register a new user
+    
     public function register($username, $email, $password) {
         $hashed_password = password_hash($password, PASSWORD_BCRYPT);
         $query = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
@@ -19,7 +19,7 @@ class User {
         return $stmt->execute();
     }
 
-    // Login a user
+    
     public function login($email, $password) {
         $query = "SELECT * FROM users WHERE email = :email";
         $stmt = $this->db->prepare($query);
@@ -34,12 +34,12 @@ class User {
         return false;
     }
 
-    // Check if user is logged in
+
     public function isLoggedIn() {
         return isset($_SESSION['username']);
     }
 
-    // Logout the user
+
     public function logout() {
         session_destroy();
         header("Location: index.php");
