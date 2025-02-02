@@ -95,5 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </section>
         </main>
     </div>
+    
 </body>
 </html>
