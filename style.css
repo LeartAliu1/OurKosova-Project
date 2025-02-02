@@ -491,11 +491,13 @@ footer a {
     text-align: center;
 }
 
-.input-box{
+/* Existing .input-box styles */
+.input-box {
     position: relative;
     width: 100%;
     height: 50px;
     border-bottom: 2px solid #162938;
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .input-box label {
@@ -509,6 +511,34 @@ footer a {
     pointer-events: none;
     transition: .5s;
     height: 5px;
+}
+
+/* Style for the <select> element */
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding-top: 20px; /* Adjust padding to align with other inputs */
+}
+
+/* Style for the <select> dropdown arrow */
+.input-box select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23162938"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Style for the <select> when focused */
+.input-box select:focus {
+    border-bottom: 2px solid #162938; /* Match the focus style of other inputs */
 }
 
 .input-box input:focus~label,
@@ -686,3 +716,107 @@ footer a {
     background-color: white;
     color: black;
 }
+
+
+
+.header-Mountains {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.header-Mountains .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header-Mountains .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.header-Mountains .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.header-Mountains .prev,
+.header-Mountains .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.header-Mountains .prev:hover,
+.header-Mountains .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-Mountains .prev {
+    left: 10px;
+}
+
+.header-Mountains .next {
+    right: 10px;
+}
+
+
+#mapContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    background: white;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#mapFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: black;
+    border: none;
+    width: 50px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+

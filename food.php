@@ -34,14 +34,14 @@ if (isset($_GET['logout'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountains</title>
+    <title>Foods</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="navbar">
         <div class="container">
           <div class="navbar-wrapper">
-            <a class="logo" href="./index.html">OurKosova</a>
+            <a class="logo" href="./index.php">OurKosova</a>
             <div class="menu">
     <a href="./food.php">Foods</a>
     <a href="./park.php">Parks</a>
@@ -57,75 +57,60 @@ if (isset($_GET['logout'])) {
         </div>
       </div>
 
-
-      <div class="header header-Mountains">
+      <div class="header header-food">
         <h1 class="title">
-            Kosova Mountains
+            Kosova Foods
         </h1>
-        <div class="slides">
-            <div class="slide" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/016/096/593/4k/sergey-kuydin-screen-2500x1100-2019-02-22-22-12-55.jpg?1550914510);"></div>
-            <div class="slide" style="background-image: url(https://trekbalkan.com/wp-content/uploads/2022/01/Gjeravica-Lake.jpg);"></div>
-            <div class="slide" style="background-image: url(https://www.thebestviewpoints.com/wp-content/uploads/2020/05/AAA2941.jpg);"></div>
-        </div>
-        <h1 class="title">Kosova Mountains</h1>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-    </div>
+      </div>
 
-      <div class="Mountains">
+    <div class="foods">
         <div class="container">
             <div class="row">
 
                 <div class="col-6">
-                    <div class="Mountains-card">
-                        <img src="https://trekbalkan.com/wp-content/uploads/2022/01/Gjeravica-Lake.jpg"/>
-                        <div class="Mountains-content">
-                            <h3>Gjeravica</h3>
-                            <p>Highest Peak</p>
+                    <div class="food-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Flija.png"/>
+                        <div class="food-content">
+                            <h3>Fli</h3>
+                            <p>Dish</p>
                         </div>
                     </div>
-                    <button class="btn1" onclick="openMap('https://mapcarta.com/13928934')">Show More</button>
-                </div>
-                
-                <div class="col-6">
-                    <div class="Mountains-card">
-                        <img src="https://alpventurer.com/wp-content/uploads/2017/06/Great-Rudoka-2658-Kosovo-North-Macedonia-scaled.jpg"/>
-                        <div class="Mountains-content">
-                            <h3>Great Rudoka</h3>
-                            <p>Sharr Mountains</p>
-                        </div>
-                    </div>
-                      <button class="btn2" onclick="openMap('https://mapcarta.com/13918078')">Show More</button>
                 </div>
                 <div class="col-6">
-                    <div class="Mountains-card">
-                        <img src="https://funkytours.com/wp-content/uploads/2022/02/Hajla-Summit-1-1024x683.jpg"/>
-                        <div class="Mountains-content">
-                            <h3>Hajla</h3>
-                            <p>Bistrica e Pejes River</p>
+                    <div class="food-card">
+                        <img src="https://agroweb.org/wp-content/uploads/2018/06/speca-te-mbushur.jpg"/>
+                        <div class="food-content">
+                            <h3>Filled Peppers</h3>
+                            <p>Meal</p>
                         </div>
                     </div>
-                     <button class="btn3" onclick="openMap('https://mapcarta.com/14004834')">Show More</button>
                 </div>
                 <div class="col-6">
-                    <div class="Mountains-card">
-                        <img src="https://botasot.info/media/botasot.info/images/2024/August/02/auto_11722588879.jpg"/>
-                        <div class="Mountains-content">
-                            <h3>Maja e Zeze</h3>
-                            <p>Sharr Mountains</p>
+                    <div class="food-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXJOX6GsijAB_UdEZH_ZlSbxDTNAoHsiSsA&s"/>
+                        <div class="food-content">
+                            <h3>Pasul</h3>
+                            <p>Dish</p>
                         </div>
                     </div>
-                    <button class="btn4" onclick="openMap('https://mapcarta.com/14069352')">Show More</button>
                 </div>
                 <div class="col-6">
-                    <div class="Mountains-card">
-                        <img src="https://katror.info/wp-content/uploads/2023/07/Rugova.png"/>
-                        <div class="Mountains-content">
-                            <h3>Bjeshket e Rugoves</h3>
-                            <p>Rugova Mountains</p>
+                    <div class="food-card">
+                        <img src="https://www.myalbanianfood.com/wp-content/uploads/2017/03/Albanian-Byrek-Mish-1300x731.jpg"/>
+                        <div class="food-content">
+                            <h3>Byrek</h3>
+                            <p>Dish</p>
                         </div>
                     </div>
-                     <button class="btn5" onclick="openMap('https://mapcarta.com/Rugova_Mountains')">Show More</button>
+                </div>
+                <div class="col-6">
+                    <div class="food-card">
+                        <img src="https://www.allrecipes.com/thmb/ygrgQsxwieOiubKfDHxjboPbXDo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9454-Greek-Baklava-mfs-197-d45ac334a0ec4e84883b09b6fc60312d.jpg"/>
+                        <div class="food-content">
+                            <h3>Bakllave</h3>
+                            <p>Dessert</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,13 +124,13 @@ if (isset($_GET['logout'])) {
           <a href="https://www.x.com/">Twitter</a>
         </div>
         <div class="footer-menu">
-          <a href="./food.html">Foods</a>
-          <a href="./park.html">Parks</a>
-          <a href="./Mountains.html">Mountains</a>
+          <a href="./food.php">Foods</a>
+          <a href="./park.php">Parks</a>
+          <a href="./Mountains.php">Mountains</a>
             <a href="./ContactUs.html">Contact Us</a>
         </div>
-      </footer>
-      <header>
+    </footer>
+    <header>
         <div class="wrapper">
             <span class="icon-close">
                 <ion-icon name="close-outline"></ion-icon>
@@ -177,7 +162,7 @@ if (isset($_GET['logout'])) {
         </div>
     </form>
 </div>
-    
+
 <div class="form-box register">
     <h2>Register</h2>
     <form action="" method="POST">
