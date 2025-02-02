@@ -127,7 +127,7 @@ if (isset($_GET['logout'])) {
           <a href="./food.php">Foods</a>
           <a href="./park.php">Parks</a>
           <a href="./Mountains.php">Mountains</a>
-            <a href="./ContactUs.html">Contact Us</a>
+            <a href="./ContactUs.php">Contact Us</a>
         </div>
     </footer>
     <header>
