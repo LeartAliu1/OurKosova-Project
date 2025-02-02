@@ -139,10 +139,10 @@ if (isset($_GET['logout'])) {
           <a href="https://www.x.com/">Twitter</a>
         </div>
         <div class="footer-menu">
-          <a href="./food.html">Foods</a>
-          <a href="./park.html">Parks</a>
-          <a href="./Mountains.html">Mountains</a>
-            <a href="./ContactUs.html">Contact Us</a>
+          <a href="./food.php">Foods</a>
+          <a href="./park.php">Parks</a>
+          <a href="./Mountains.php">Mountains</a>
+            <a href="./ContactUs.php">Contact Us</a>
         </div>
       </footer>
       <header>
