@@ -199,6 +199,13 @@ if (isset($_GET['logout'])) {
             <input type="password" name="password" required>
             <label for="Password">Password</label>
         </div>
+        <div class="input-box">
+            <select name="role" required>
+             <option value="">--Select Role--</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select >
+        </div>
         <button type="submit" name="register" class="btn">Register</button>
         <div class="login-register">
             <p>Already have an account? <a href="#" class="login-link">Login</a></p>
