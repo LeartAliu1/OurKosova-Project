@@ -1,18 +1,18 @@
 <?php
-// Include the Contact class
+
 require 'Contact.php'; 
 
-// Database connection
+
 $db = new mysqli('localhost', 'root', '', 'contact_form_db');
 
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-// Instantiate the Contact class
+
 $contact = new Contact($db);
 
-// Handle form submission
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
