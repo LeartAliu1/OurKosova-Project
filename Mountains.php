@@ -23,15 +23,12 @@
 
 
       <div class="header header-Mountains">
-        <h1 class="title">
-            Kosova Mountains
-        </h1>
+
         <div class="slides">
             <div class="slide" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/016/096/593/4k/sergey-kuydin-screen-2500x1100-2019-02-22-22-12-55.jpg?1550914510);"></div>
             <div class="slide" style="background-image: url(https://trekbalkan.com/wp-content/uploads/2022/01/Gjeravica-Lake.jpg);"></div>
             <div class="slide" style="background-image: url(https://www.thebestviewpoints.com/wp-content/uploads/2020/05/AAA2941.jpg);"></div>
         </div>
-        <h1 class="title">Kosova Mountains</h1>
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
@@ -106,7 +103,7 @@
           <a href="./food.php">Foods</a>
           <a href="./park.php">Parks</a>
           <a href="./Mountains.php">Mountains</a>
-            <a href="./ContactUs.php">Contact Us</a>
+            <a href="./ContactUs.html">Contact Us</a>
         </div>
       </footer>
       <header>
