@@ -2,8 +2,8 @@
 class Database {
     private $host = "localhost";
     private $db_name = "ourkosova";
-    private $username = "root"; // Replace with your database username
-    private $password = ""; // Replace with your database password
+    private $username = "root"; 
+    private $password = ""; 
     private $conn;
 
     public function getConnection() {
